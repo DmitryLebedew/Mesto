@@ -1,0 +1,7 @@
+@import url(./_inactive/popup__error_inactive.css);
+
+.popup__error{
+    height: 0;
+    font-size: 12px;
+    color: red;
+}
