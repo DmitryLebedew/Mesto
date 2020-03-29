@@ -20,4 +20,6 @@ class PopupImage {
         this.imgPopup.classList.toggle('popup-image_is-opened');
       }
     }
-  }
+  };
+
+  export{PopupImage};

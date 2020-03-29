@@ -25,4 +25,7 @@ class CardList{
       this.template.removeCard(event);
     }
   }
-}
+};
+
+export{CardList};
+

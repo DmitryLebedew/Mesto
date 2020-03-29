@@ -33,4 +33,6 @@ class PopupEdit extends Popup {
       })
       .catch(err => alert(err));
   }
-}
+};
+
+export{PopupEdit};

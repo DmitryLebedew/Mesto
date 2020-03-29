@@ -34,8 +34,6 @@ class Api {
       .catch(this.showError);
   }
 
-  // Отличное решение вынести повторяющийся код в отдельные методы!
-
   checkStatus(res) {
     if (res.ok) {
       return res.json();
@@ -48,3 +46,5 @@ class Api {
     return Promise.reject(err);
   }
 }
+
+export {Api};

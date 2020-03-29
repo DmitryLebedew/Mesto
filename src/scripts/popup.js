@@ -4,5 +4,7 @@ class Popup {
     this.button = this.container.querySelector('button');
     this.form = this.container.querySelector('form');
   }
-}
+};
+
+export{Popup};
 

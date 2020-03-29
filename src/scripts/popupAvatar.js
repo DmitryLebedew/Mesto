@@ -10,3 +10,5 @@ class PopupAvatar extends Popup {
         }
       }
 }
+
+export{PopupAvatar};

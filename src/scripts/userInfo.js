@@ -39,4 +39,6 @@ class UserInfo {
     this.inputName.value = this.userName;
     this.inputJob.value = this.userJob;
   }
-}
+};
+
+export{UserInfo};

@@ -40,4 +40,6 @@ class FormValidator {
         this.checkInputValidity(this.form);
         this.setSubmitButtonState(this.form)
     }
-}
+};
+
+export{FormValidator};

@@ -1,3 +1,16 @@
+import './pages/index.css';
+import{Api} from './scripts/api.js';
+import{Card} from  './scripts/card.js';
+import{CardList} from './scripts/cardlist.js';
+import{FormValidator} from './scripts/formvalidator.js';
+import{Popup} from './scripts/popup.js';
+import{PopupAvatar} from './scripts/popupAvatar.js';
+import{PopupEdit} from './scripts/popupEdit.js';
+import{PopupImage} from './scripts/popupImage.js';
+import{PopupPlace} from './scripts/popupPlace.js';
+import{UserInfo} from './scripts/userInfo.js';
+
+
 const errorMesages = {
 	valueMissing: 'Это обязательное поле',
 	tooShort: 'Должно быть от 2 до 30 символов',

@@ -33,4 +33,6 @@ class PopupPlace extends Popup {
       this.inputName.value = null;
       this.inputLink.value = null;
     }
-  }
+  };
+
+  export{PopupPlace};
