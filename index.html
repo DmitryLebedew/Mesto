@@ -1,16 +1,78 @@
-Html Webpack Plugin:
-<pre>
-  TypeError: Cannot read property 'main' of undefined
-  
-  - index.html:101 
-    C:/Users/дима/Desktop/11-sprint/Mesto/index.html:101:41
-  
-  - index.html:116 module.exports
-    C:/Users/дима/Desktop/11-sprint/Mesto/index.html:116:3
-  
-  - index.js:422 
-    [Mesto]/[html-webpack-plugin]/index.js:422:16
-  
-  - async Promise.all
-  
-</pre>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="style.9589936b3bd661248177.css">
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+    </header>
+    <div class="profile root__section">
+      <div class="user-info">
+        <div class="user-info__photo"></div>
+        <div class="user-info__data">
+          <h1 class="user-info__name"></h1>
+          <p class="user-info__job"></p>
+          <button class="button user-info__edit">Edit</button>
+        </div>
+        <button class="button user-info__button">+</button>
+      </div>
+    </div>    
+    <div class="places-list root__section">
+
+    </div>
+    <div class="popup popup_add-card">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="new" novalidate>
+            <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название" minlength="2" maxlength="30" required>
+            <span data-for-element="name" class="popup__error popup__error_name"></span>
+            <input type="url" name="info" class="popup__input popup__input_type_info" placeholder="Ссылка на картинку" required>
+            <span data-for-element="link" class="popup__error popup__error_info"></span>
+            <button type="submit" name="submit" class="button popup__button" disabled>+</button>
+        </form>        
+      </div>
+    </div>
+
+    <div class="popup-image">
+      <div class="popup-image__content">
+        <img src="./images/close.svg" alt="" class="popup-image__close">
+        <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="" class="popup-image__img">
+      </div>
+    </div>
+
+    <div class="popup popup_edit-profile">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form class="popup__form" novalidate name="new">
+            <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя" minlength="2" maxlength="30" required>
+            <span data-for-element="name" class="popup__error popup__error_name"></span>
+            <input type="text" name="info" class="popup__input popup__input_type_info" placeholder="О себе"  minlength="2" maxlength="30" required>
+            <span data-for-element="info" class="popup__error popup__error_info"></span>
+            <button type="submit" name="submit" class="button popup__button_user">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup_edit-avatar">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Обновить аватар</h3>
+        <form class="popup__form" novalidate name="new">
+            <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Ссылка на аватар" minlength="2" maxlength="30" required>
+            <span data-for-element="name" class="popup__error popup__error_name"></span>            
+            <button type="submit" name="submit" class="button popup__button_user" disabled>Сохранить</button>
+        </form>
+      </div>
+    </div>
+  </div>  
+  <script src="main.e37ea57dd8fa781376d1.js"></script>     
+</body>
+</html>
