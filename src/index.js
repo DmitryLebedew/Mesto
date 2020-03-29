@@ -1,3 +1,5 @@
+'use strict';
+
 import './pages/index.css';
 import{Api} from './scripts/api.js';
 import{Card} from  './scripts/card.js';
