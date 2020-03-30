@@ -11,6 +11,7 @@ import{PopupImage} from './scripts/popupImage.js';
 import{PopupPlace} from './scripts/popupPlace.js';
 import{UserInfo} from './scripts/userInfo.js';
 
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8';
 
 const errorMesages = {
 	valueMissing: 'Это обязательное поле',
@@ -19,7 +20,7 @@ const errorMesages = {
 };
 
 const api = new Api({
-  url: 'https://praktikum.tk/cohort8', 
+  url: serverUrl, 
   headers: {
     authorization: 'e6c5181c-50cf-45ea-bfe8-5bf84453521e',
     'Content-Type': 'application/json'    
