@@ -1,3 +1,5 @@
+import{Popup} from './popup.js';
+
 class PopupPlace extends Popup {
     constructor(container, cardList) {
       super(container);

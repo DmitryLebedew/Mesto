@@ -1,3 +1,4 @@
+import{Popup} from './popup.js';
 
 class PopupEdit extends Popup {
   constructor(container, userInfoDom) {

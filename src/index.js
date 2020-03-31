@@ -1,15 +1,17 @@
+'use strict';
+
 import './pages/index.css';
 import{Api} from './scripts/api.js';
 import{Card} from  './scripts/card.js';
 import{CardList} from './scripts/cardlist.js';
 import{FormValidator} from './scripts/formvalidator.js';
-import{Popup} from './scripts/popup.js';
 import{PopupAvatar} from './scripts/popupAvatar.js';
 import{PopupEdit} from './scripts/popupEdit.js';
 import{PopupImage} from './scripts/popupImage.js';
 import{PopupPlace} from './scripts/popupPlace.js';
 import{UserInfo} from './scripts/userInfo.js';
 
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8' : 'https://praktikum.tk/cohort8';
 
 const errorMesages = {
 	valueMissing: 'Это обязательное поле',
@@ -18,7 +20,7 @@ const errorMesages = {
 };
 
 const api = new Api({
-  url: 'https://praktikum.tk/cohort8', 
+  url: serverUrl, 
   headers: {
     authorization: 'e6c5181c-50cf-45ea-bfe8-5bf84453521e',
     'Content-Type': 'application/json'    
@@ -30,7 +32,7 @@ const cardContainer = document.querySelector('.places-list');
 const userInfoDom = document.querySelector('.user-info');
 const popupEditProfile = document.querySelector('.popup_edit-profile');
 const popupAddCard = document.querySelector('.popup_add-card');
-const popupEditAvatar = document.querySelector('.popup_edit-avatar')
+const popupEditAvatar = document.querySelector('.popup_edit-avatar');
 const card = new Card();
 const cardList = new CardList(cardContainer, card, api);
 const userInfo = new UserInfo(userInfoDom, popupEditProfile, api);
